@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rigistration form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+
+body{
+    /* background-color: rgb(86, 181, 225); */
+    background-color: rgb(98, 202, 168);
+    padding: 0 30px;
+}
+        h1,h3{
+            text-align: center;
+            color:#ffff;
+
+        }
+        h1{
+          font-size: 3.2rem;
+          margin-top: 1.2rem;
+          font-family: 'Dancing Script', cursive;
+          font-weight: 600;
+          color: rgb(98, 202, 168);
+          background-color: #ffff;
+          width:  106.2%;
+          position: relative;
+          right: 4%;
+
+        }
+        h3{
+          margin: 0.7rem;
+          font-family: 'Dancing Script', cursive;
+          margin-top: 1rem;
+
+        }
+        p{
+            text-align: center;
+            color: rgb(51, 52, 52);
+            font-size: 16px;
+            margin-top: 0.7rem;
+        }
+        .btn{
+          background-color: rgb(195, 223, 214);
+          color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>DESWALI LIBRARY <br></h1>
+        <h3>STUDENT REGISTRATION FORM
+        </h3>     <p>A project of free education for All</p>
+    <form class="row g-3 needs-validation" novalidate action="https://formsubmit.co/saadahsankhan26@gmail.com" method="post">
+        <div class="col-md-3">
+          <label for="validationCustom01" class="form-label">NAME:</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required name="Student name">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom02" class="form-label">FATHER NAME:</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required name="Student FatherName">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom02" class="form-label">EMAIL:</label>
+          <input type="text" class="form-control" id="validationCustom02" name="Email" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustomUsername" class="form-label"> CLASS:</label>
+          <div class="input-group has-validation">
+            
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required name="Class">
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">PHONE:</label>
+          <input type="number" class="form-control" id="validationCustom03" required name="Phone Number">
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">SELECT YOUR GENDER:</label>
+          <select class="form-select" id="validationCustom04" required name="Gender">
+            <option selected disabled value="male">male</option>
+            <option value="female">female</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">AGE:</label>
+          <input type="number" class="form-control" id="validationCustom05" required name="Age">
+          <div class="invalid-feedback">
+            Please provide a valid .
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="validationCustom04" class="form-label">RELIGION:</label>
+            <select class="form-select" id="validationCustom04" required name="RELIGION">
+              <option selected disabled value="Islam">Islam</option>
+              <option value="hindus">hinduism</option>
+              <option value="other">Others</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">SURENAME:</label>
+            <input type="text" class="form-control" id="validationCustom03" required name="SureName">
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">DATE OF BIRTH:</label>
+            <input type="date" class="form-control" id="validationCustom03" required name="Date of Birth">
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+  
+          <div class="col-md-12">
+            <label for="validationCustom03" class="form-label">ADDRESS:</label>
+            <input type="text" class="form-control" id="validationCustom03" required name="Address">
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+  
+  
+
+
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn" type="submit">Submit form</button>
+          <button class="btn" type="reset">Reset form</button>
+        </div>
+      </form>
+
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+</script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
