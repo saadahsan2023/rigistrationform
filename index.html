@@ -76,18 +76,20 @@ body{
           </div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustomUsername" class="form-label"> CLASS:</label>
-          <div class="input-group has-validation">
-            
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required name="Class">
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
+          <label for="validationCustom04" class="form-label">Class</label>
+          <select class="form-select" id="validationCustom04" required name="Class">
+            <option  value="IX">IX</option>
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
           </div>
-        </div>
-        <div class="col-md-6">
+        </div>        <div class="col-md-6">
           <label for="validationCustom03" class="form-label">PHONE:</label>
-          <input type="number" class="form-control" id="validationCustom03" required name="Phone Number">
+          <input type="number" class="form-control" id="validationCustom03" value="+92" required name="Phone Number">
           <div class="invalid-feedback">
             Please provide a valid city.
           </div>
@@ -96,7 +98,7 @@ body{
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">SELECT YOUR GENDER:</label>
           <select class="form-select" id="validationCustom04" required name="Gender">
-            <option selected disabled value="male">male</option>
+            <option value="male">male</option>
             <option value="female">female</option>
           </select>
           <div class="invalid-feedback">
@@ -112,21 +114,23 @@ body{
           </div>
         </div>
 
-        <div class="col-md-4">
-            <label for="validationCustom04" class="form-label">RELIGION:</label>
-            <select class="form-select" id="validationCustom04" required name="RELIGION">
-              <option selected disabled value="Islam">Islam</option>
-              <option value="hindus">hinduism</option>
-              <option value="other">Others</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid state.
-            </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">SELECT YOUR COURSE</label>
+          <select class="form-select" id="validationCustom04" required name="Gender">
+            <!-- <option selected disabled value="Select From Here">Select From Here</option> -->
+            <option value="English language">English language</option>
+            <option value="Web developemnt">Web developemnt</option>
+            <option disabled value="graphic designing">Graphic designing</option>
+            
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
           </div>
+        </div>
 
           <div class="col-md-4">
-            <label for="validationCustom03" class="form-label">SURENAME:</label>
-            <input type="text" class="form-control" id="validationCustom03" required name="SureName">
+            <label for="validationCustom03" class="form-label">SURNAME:</label>
+            <input type="text" class="form-control" id="validationCustom03" required name="SurName">
             <div class="invalid-feedback">
               Please provide a valid city.
             </div>
